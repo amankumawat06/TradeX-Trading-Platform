@@ -32,14 +32,14 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/login",
+        "https://tradex-trading-platform.onrender.com/login",
         formData,
         { withCredentials: true }
       );
 
       if (data.success) {
         handleSuccess(data.message);
-        window.location.href = "http://localhost:3000";
+        window.location.href = "https://tradex-dashboarrd.netlify.app";
         // setTimeout(() => navigate("/dashboard"), 1000);
       } else{
           handleError(data.message);

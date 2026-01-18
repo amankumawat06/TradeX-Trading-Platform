@@ -14,7 +14,7 @@ const Menu = () => {
   };
 
   let handleLogoutBtn = () => {
-    window.location.href = "http://localhost:3001/login";
+    window.location.href = "https://tradex-trading-platform.netlify.app/login";
   }
 
   const menuClass = "menu";

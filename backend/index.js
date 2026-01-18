@@ -14,10 +14,8 @@ const auth = require("./routes/authenticationRoute");
 app.use(
   cors({
     origin: [
-      "https://tradex-trading-platoform.netlify.app/",
-      "https://spontaneous-wisp-f223a4.netlify.app/",
-      "http://localhost:3000",
-      "http://localhost:3001",
+      "https://tradex-trading-platform.netlify.app",
+      "https://tradex-dashboarrd.netlify.app"
     ],
     credentials: true,
   })
@@ -48,6 +46,10 @@ app.use("/", positions);
 app.use("/", orders);
 app.use("/", auth);
 
+
+app.use(() => {
+  res.send("The path you are requesting does not exist!")
+})
 
 app.listen(PORT, () => {
   console.log(`Server is waiting for request on Port ${PORT}`);
