@@ -7,11 +7,11 @@ const Summary = () => {
   let [allHoldings,setAllHoldings] = useState([])
   
   useEffect(() => {
-    axios.get("https://tradex-trading-platform.onrender.com/allHoldings").then((res) => {
+    axios.get("http://localhost:8080/allHoldings").then((res) => {
       setAllHoldings(res.data)
     })
 
-    axios.get("https://tradex-trading-platform.onrender.com/allOrders").then((res) => {
+    axios.get("http://localhost:8080/allOrders").then((res) => {
       let NewHoldings = res.data.map((order) => ({
         name: order.name,
         qty: order.qty,

@@ -34,7 +34,7 @@ const Signup = () => {
 
     try {
       const { data } = await axios.post(
-        "https://tradex-trading-platform.onrender.com/signup",
+        "http://localhost:8080/signup",
         formData,
         { withCredentials: true }
       );

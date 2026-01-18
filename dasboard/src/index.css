@@ -878,3 +878,22 @@ hr {
 .sellActionWindow{
   box-shadow: 0 0 10px #4184f3;
 }
+
+.logoutBtn{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+.logout li{
+  margin-left: 16px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.logout li p:hover{
+  color: #4caf50;
+}

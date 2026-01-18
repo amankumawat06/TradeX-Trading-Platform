@@ -9,7 +9,7 @@ const BuyActionWindow = ({ stock }) => {
   const [stockPrice, setStockPrice] = useState(stock.price);
 
   const handleBuyClick = () => {
-    axios.post("https://tradex-trading-platform.onrender.com/newOrders", {
+    axios.post("http://localhost:8080/newOrders", {
       name: stock.name,
       price: Number(stockPrice),
       qty: Number(stockQuantity),

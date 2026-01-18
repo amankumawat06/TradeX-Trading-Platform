@@ -16,6 +16,8 @@ app.use(
     origin: [
       "https://tradex-trading-platoform.netlify.app/",
       "https://spontaneous-wisp-f223a4.netlify.app/",
+      "http://localhost:3000",
+      "http://localhost:3001",
     ],
     credentials: true,
   })

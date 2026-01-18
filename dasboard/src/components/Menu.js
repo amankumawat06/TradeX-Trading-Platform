@@ -13,6 +13,10 @@ const Menu = () => {
     setIsprofileDropdownOpen(!isprofileDropdownOpen);
   };
 
+  let handleLogoutBtn = () => {
+    window.location.href = "http://localhost:3001/login";
+  }
+
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
 
@@ -118,6 +122,15 @@ const Menu = () => {
           <p className="username">USERID</p>
         </div>
       </div>
+      <ul className="logoutBtn" onClick={handleLogoutBtn}>
+         <li>
+            <Link to="/" style={{textDecoration:"none",color:"#b23b3b"}}>
+              <p>
+                Logout
+              </p>
+            </Link>
+          </li>
+       </ul>
     </div>
   );
 };

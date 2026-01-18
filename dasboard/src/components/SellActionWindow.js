@@ -16,7 +16,7 @@ const SellActionWindow = ({ stock }) => {
       return setError("Quantity should be less than or equal to the holding quantity")
     }
     try{
-      await axios.post("https://tradex-trading-platform.onrender.com/newOrders", {
+      await axios.post("http://localhost:8080/newOrders", {
         name: stock.name,
         price: stockPrice,
         qty: stockQuantity,
