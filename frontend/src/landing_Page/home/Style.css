@@ -1,0 +1,109 @@
+/* Award Sytling */
+
+.awardImage {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width:390px) {
+    .awardContent{
+        font-size: 14px;
+    }    
+    .heading{
+        font-size: 23px;
+    }
+}
+
+
+
+/* Hero Section Styling */
+
+.signupBtn{
+    margin: 0 auto;
+    width: 20%;
+}
+
+@media (max-width:992px) {
+    .signupBtn{
+        width: 30%;
+    }
+}
+
+@media (max-width:767px) {
+    .signupBtn{
+        width: 40%;
+    }
+}
+@media (max-width:390px) {
+    .signupBtn{
+        width: 50%;
+    }
+}
+
+@media (max-width:290px) {
+    .signupBtn{
+        width: 70%;
+    }
+}
+
+
+/* Stats Section Styling */
+
+.statsContainer{
+    margin-top: 60px !important;
+    margin-right: 10px;
+}
+
+.statsContent{
+    text-align: justify;
+}
+
+.statsContent h4{
+    margin-top: 18px;
+}
+
+.txtBold{
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.txtBold:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:410px) {
+    .statsLinks{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.achorTagStyling{
+    font-weight: 600;
+    text-decoration: none;
+    color: #387ED1;
+}
+
+.achorTagStyling:hover{
+    text-decoration: underline;
+}
+
+.pricingContainer{
+    text-align: justify;
+}
+
+.educationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:992px) {
+    .educationImg{
+        margin-bottom: 40px;
+    }
+    .educationRightPanel{
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,66 @@
+.leftSection{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.productLinks a{
+    text-decoration: none;
+}
+
+.productLinks a:hover{
+    text-decoration: underline;
+}
+
+.universeContent>div>img{
+    width: 220px;
+}
+
+.universeContent>div {
+    padding: 10px 30px;
+}
+
+#ditto img{
+    width: 140px;
+}
+
+#streak img{
+    width: 180px;
+}
+
+#tijori img{
+    width: 160px;
+}
+
+#fundhouse img{
+    width: 170px;
+}
+
+#senseibull img{
+    width: 210px;
+}
+
+.signupBtn{
+    padding: 10px 27px;
+    font-weight: 500;
+    background-color: #387ED1;
+    font-size: 1.2rem;
+    border: none;
+
+}
+
+.signupBtn:hover{
+    background-color: black;
+}
+
+/* @media (max-width:991px) {
+    .leftContainer{
+        margin-bottom: 40px;
+    }
+} */
+
+.productHero{
+    margin-bottom: 100px !important;
+    margin-top: 80px !important;
+}

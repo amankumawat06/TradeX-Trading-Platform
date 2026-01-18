@@ -1,0 +1,18 @@
+/* Team Page  */
+
+.ownerImage img{
+    border-radius: 50%;
+    width: 50%;
+}
+
+.aboutLinks a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #387ED1;
+}
+
+@media (max-width:991px) {
+    .aboutContent{
+        margin-top: 40px;
+    }
+}

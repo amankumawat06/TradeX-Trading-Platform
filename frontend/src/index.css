@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Navbar Style */
+/* Navbar fixes */
+
+.active {
+  color: #424242 !important;
+}
+
+/* logo */
+.zerodhalogo {
+  width: 140px;
+}
+
+@media (max-width: 991px) {
+  .nav-item {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+}
+
+/* desktop only spacing */
+@media (min-width: 992px) {
+  .nav-link {
+    margin-left: 40px;
+  }
+}
+
+
+
+/* Footer styling */
+
+.footerContainer{
+  color: #424242;
+  font-size: 16px; 
+}
+
+.footerContainer>div>div>ul{
+  padding-left: 0;
+}
+
+.footerContainer>div>div>ul>li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footerContainer>div>div>ul>li>a{
+  text-decoration: none;
+  color: #424242;
+}
+
+.footerContainer>div>div>ul>li>a:hover{
+  color: #857171;
+}
+
+.footerContainer>div>div>h4{
+  margin-bottom: 18px;
+}
+
+.hrLineTwo{
+    display: none;
+    margin-top: 20px;
+}
+
+.footerLinks>span{
+  flex-wrap: wrap;
+  max-width: 140px;
+  min-width: 50px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footerLinks>span>a{
+  text-decoration: none;
+  color: #424242;
+  font-size: 13px;
+}
+
+.footerLinks>span>a:hover{
+  color: rgb(90, 90, 190);
+}
+
+@media (max-width:991px) {
+  .footerContainer{
+    /* flex-direction: column; */
+    display: block !important;
+  }
+  .socialLinks{
+    width: 100%;
+  }
+  .zerodhalogoFooter{
+    width: 30% !important;
+  }
+  .footerContent{
+    display: block !important;
+    margin-top: 30px;
+  }
+  .hrLine{
+    display: none;
+  }
+  .socialLinksContainer{
+    display: flex;
+  }
+  .hrLineTwo{
+    display: block;
+  }
+}
+
+@media (max-width:550px) {
+  .socialLinksContainer .upperContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .socialLinksContainer .lowerContainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+}
+
+@media (min-width:550px) and (max-width:991px){
+  .socialLinksContainer .upperContainer>span, .lowerContainer>span{
+    margin: 0 10px 0 10px;
+  }
+}

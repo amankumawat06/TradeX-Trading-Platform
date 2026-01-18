@@ -1,0 +1,24 @@
+.pricingContent>div>img{
+    width: 70%;
+}
+
+.pricingContent>div>p{
+    line-height: 27px;
+    color: #424242;
+}
+
+@media (max-width:991px) {
+    .pricingContent>div>img{
+        width: 40%;
+    }
+    .chargesList{
+        margin-top: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width:992px) {
+    .aboveRow{
+        margin: 100px 0 160px 0;
+    }
+}
