@@ -124,7 +124,7 @@ const Menu = () => {
       </div>
       <ul className="logoutBtn" onClick={handleLogoutBtn}>
          <li>
-            <Link to="/" style={{textDecoration:"none",color:"#b23b3b"}}>
+            <Link style={{textDecoration:"none",color:"#b23b3b"}}>
               <p>
                 Logout
               </p>
