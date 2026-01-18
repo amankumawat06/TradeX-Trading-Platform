@@ -124,11 +124,9 @@ const Menu = () => {
       </div>
       <ul className="logoutBtn" onClick={handleLogoutBtn}>
          <li>
-            <Link style={{textDecoration:"none",color:"#b23b3b"}}>
-              <p>
+              <p style={{textDecoration:"none",color:"#b23b3b"}}>
                 Logout
               </p>
-            </Link>
           </li>
        </ul>
     </div>
