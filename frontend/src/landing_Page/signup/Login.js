@@ -39,7 +39,7 @@ const Login = () => {
 
       if (data.success) {
         handleSuccess(data.message);
-        window.location.href = "https://tradex-dashboarrd.netlify.app";
+        window.location.href = "https://tradex-dashboard-three.vercel.app/";
         // setTimeout(() => navigate("/dashboard"), 1000);
       } else{
           handleError(data.message);

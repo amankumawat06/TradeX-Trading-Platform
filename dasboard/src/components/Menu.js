@@ -19,6 +19,11 @@ const Menu = () => {
     window.location.href = "https://tradex-trading-platform.netlify.app/login";
   }
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
 
@@ -32,7 +37,10 @@ const Menu = () => {
             <Link
               style={{ textDecoration: "none" }}
               to="/"
-              onClick={() => handleMenuClick(0)}
+              onClick={() => {
+                handleMenuClick(0)
+                closeMenu()
+              }}
             >
               <p
                 className={
@@ -47,7 +55,10 @@ const Menu = () => {
             <Link
               to="/orders"
               style={{ textDecoration: "none" }}
-              onClick={() => handleMenuClick(1)}
+              onClick={() => {
+                handleMenuClick(1)
+                closeMenu()
+              }}
             >
               <p
                 className={
@@ -62,7 +73,10 @@ const Menu = () => {
             <Link
               to="/holdings"
               style={{ textDecoration: "none" }}
-              onClick={() => handleMenuClick(2)}
+              onClick={() => {
+                handleMenuClick(2)
+                closeMenu()
+              }}
             >
               <p
                 className={
@@ -77,7 +91,10 @@ const Menu = () => {
             <Link
               to="/positions"
               style={{ textDecoration: "none" }}
-              onClick={() => handleMenuClick(3)}
+              onClick={() => {
+                handleMenuClick(3)
+                closeMenu()
+              }}
             >
               <p
                 className={
@@ -92,7 +109,10 @@ const Menu = () => {
             <Link
               to="/funds"
               style={{ textDecoration: "none" }}
-              onClick={() => handleMenuClick(4)}
+              onClick={() => {
+                handleMenuClick(4)
+                closeMenu()
+              }}
             >
               <p
                 className={
@@ -107,7 +127,10 @@ const Menu = () => {
             <Link
               to="/apps"
               style={{ textDecoration: "none" }}
-              onClick={() => handleMenuClick(5)}
+              onClick={() => {
+                handleMenuClick(5)
+                closeMenu()
+              }}
             >
               <p
                 className={
