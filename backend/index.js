@@ -14,8 +14,8 @@ const auth = require("./routes/authenticationRoute");
 app.use(
   cors({
     origin: [
-      "https://trade-x-trading-platform-five.vercel.app/",
-      "https://tradex-dashboard-three.vercel.app/"
+      "https://trade-x-trading-platform-five.vercel.app",
+      "https://tradex-dashboard-three.vercel.app"
     ],
     credentials: true,
   })
