@@ -14,8 +14,8 @@ const auth = require("./routes/authenticationRoute");
 app.use(
   cors({
     origin: [
-      "https://tradex-trading-platform.netlify.app",
-      "https://tradex-dashboarrd.netlify.app"
+      "https://trade-x-trading-platform-five.vercel.app/",
+      "https://tradex-dashboard-three.vercel.app/"
     ],
     credentials: true,
   })
