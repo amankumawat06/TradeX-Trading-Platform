@@ -337,6 +337,10 @@ hr {
   margin:auto;
 }
 
+.username h6{
+  margin-left: 30px;
+}
+
 /* sudo selectors */
 
 .menu:hover {
@@ -948,7 +952,8 @@ hr {
   display: none;
   position: fixed;
   left: 0;
-  top: 60px;
+  /* top: 60px; */
+  height: calc(100vh - 94vh);
   z-index: 999;
   background: white;
   border: 1px solid #ddd;
@@ -965,13 +970,15 @@ hr {
   .watchlist-wrapper {
     position: fixed;
     left: -180%;
-    top: 61px;
+    /* top: 61px; */
+    height: calc(100vh - 10vh);
     width: 400px;
     height: 100vh;
     background: #fff;
     z-index: 998;
     transition: left 0.6s ease;
     box-shadow: 0 10px 7px rgb(122, 120, 120);
+    padding-bottom: 140px;
   }
 
   .watchlist-wrapper.open {
