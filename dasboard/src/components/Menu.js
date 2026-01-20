@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   let [selectedMenu, setSelectedMenu] = useState(0);
   let [isprofileDropdownOpen, setIsprofileDropdownOpen] = useState(false);
+  let [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   let handleMenuClick = (index) => {
     setSelectedMenu(index);
@@ -23,7 +25,8 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <img src="logo.png" style={{ width: "26px" }} />
-      <div className="menus">
+      {/* <div className="menus"> */}
+      <div className={`menus ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
             <Link
@@ -122,13 +125,23 @@ const Menu = () => {
           <p className="username">USERID</p>
         </div>
       </div>
+     <div className="hamburger-cont">
       <ul className="logoutBtn" onClick={handleLogoutBtn}>
          <li>
+          <Link to="" style={{textDecoration:"none"}}>
               <p style={{textDecoration:"none",color:"#b23b3b"}}>
                 Logout
               </p>
+            </Link>
           </li>
        </ul>
+       <button 
+        className="hamburger"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          ☰
+        </button>
+      </div>
     </div>
   );
 };
