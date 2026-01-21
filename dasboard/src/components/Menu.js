@@ -16,7 +16,7 @@ const Menu = () => {
   };
 
   let handleLogoutBtn = () => {
-    window.location.href = "https://tradex-trading-platform.netlify.app/login";
+    window.location.href = "https://trade-x-trading-platform-five.vercel.app/login";
   }
 
   const closeMenu = () => {
