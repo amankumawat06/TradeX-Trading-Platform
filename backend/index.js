@@ -47,7 +47,7 @@ app.use("/", orders);
 app.use("/", auth);
 
 
-app.use(() => {
+app.use((req,res) => {
   res.send("The path you are requesting does not exist!")
 })
 
