@@ -66,11 +66,6 @@ logging  into their account
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
-
-☁️ **Cloud Storage**  
-
-![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
-
 🔐 **Authentication**  
 
 ![Cookies](https://img.shields.io/badge/Cookies-FFD966?style=for-the-badge&logo=cookiecutter&logoColor=black)
