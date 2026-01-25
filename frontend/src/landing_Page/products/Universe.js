@@ -1,5 +1,6 @@
 import React from 'react'
 import "./style.css"
+import { Link } from 'react-router-dom'
 
 const Universe = () => {
   return (
@@ -64,7 +65,11 @@ const Universe = () => {
           </div>
         </div>
 
-      <div className='btn btn-primary mt-5 mb-5 signupBtn'>Sign up for free</div>
+      <div className='btn btn-primary mt-5 mb-5 signupBtn'>
+      <Link to="/signup" style={{textDecoration:"none", color:"#fff"}}>
+        Sign up for free
+      </Link>
+      </div>
     </div>
   )
 }

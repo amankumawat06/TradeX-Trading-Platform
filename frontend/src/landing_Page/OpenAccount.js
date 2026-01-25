@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const OpenAccount = () => {
   return (
@@ -7,7 +8,11 @@ const OpenAccount = () => {
         <div className='col'>
           <h2 style={{marginBottom:"17px"}}>Open a TradeX account</h2>
           <p>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.</p>
-          <button className='btn btn-primary signupBtn p-2'>Sign up for free</button>
+          <button className='btn btn-primary signupBtn p-2'>
+          <Link to="/signup" style={{textDecoration:"none",color:"#fff"}}>
+            Sign up for free
+          </Link>
+          </button>
         </div>
       </div>
     </div>
