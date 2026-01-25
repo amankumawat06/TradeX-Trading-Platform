@@ -12,14 +12,14 @@ const CreateTicket = () => {
               <div><a href='#'>Offline Account Opening</a></div>
               <div><a href='#'>Company, Partnership and HUF Account Opening</a></div>
               <div><a href='#'>NRI Account Opening</a></div>
-              <div><a href='#'>Charges at Zerodha</a></div>
-              <div><a href='#'>Zerodha IDFC FIRST Bank 3-in-1 Account</a></div>
+              <div><a href='#'>Charges at TradeX</a></div>
+              <div><a href='#'>TradeX IDFC FIRST Bank 3-in-1 Account</a></div>
               <div><a href='#'>Getting Started</a></div>
             </div>
         </div>
 
         <div className='col-lg-4 col-md-6 col-12'>
-            <h5><i class="fa-solid fa-user"></i> Your Zerodha Account</h5>
+            <h5><i class="fa-solid fa-user"></i> Your TradeX Account</h5>
             <div>
               <div><a href='#'>Login Credentials</a></div>
               <div><a href='#'>Account modification and Segment Addition</a></div>
@@ -30,7 +30,7 @@ const CreateTicket = () => {
         </div>
 
         <div className='col-lg-4 col-md-6 col-12'>
-            <h5><i class="fa-solid fa-chart-line"></i> Your Zerodha Account</h5>
+            <h5><i class="fa-solid fa-chart-line"></i> Your TradeX Account</h5>
             <div>
               <div><a href='#'>Margin/leverage, Product and Order types</a></div>
               <div><a href='#'>Kite Web and Mobile</a></div>

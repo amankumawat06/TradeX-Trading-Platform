@@ -337,10 +337,6 @@ hr {
   margin:auto;
 }
 
-.username h6{
-  margin-left: 30px;
-}
-
 /* sudo selectors */
 
 .menu:hover {
@@ -997,6 +993,9 @@ hr {
   }
   .order-table table{
     overflow-x: scroll;
+  }
+  .title{
+    margin-left: 30px;
   }
 }
 

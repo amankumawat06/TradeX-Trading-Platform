@@ -56,7 +56,9 @@ const Signup = () => {
   };
 
   return (
-    <div className="container col-6 mt-5 mb-5 pb-5">
+    <div className="container my-5">
+    <div className="row justify-content-center">
+    <div className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 p-4 p-md-5 shadow rounded">
       <h3 className="text-center mb-4">Create Account</h3>
 
       <form onSubmit={handleSubmit}>
@@ -107,11 +109,13 @@ const Signup = () => {
         </button>
 
         <p className="mt-3 text-center">
-          Already have an account? <Link to="/login">Login</Link>
+          Already have an account? <Link to="/login" className="account">Login</Link>
         </p>
       </form>
 
       <ToastContainer />
+    </div>
+    </div>
     </div>
   );
 };

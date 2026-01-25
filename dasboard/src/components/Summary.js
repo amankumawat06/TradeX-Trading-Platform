@@ -24,12 +24,16 @@ const Summary = () => {
       setAllHoldings((prev) => [...prev, ...NewHoldings])
     })
 
+    axios.post("https://tradex-trading-platform.onrender.com/sign").then((res) => {
+      console.log(res.name)
+    })
+
   },[])
 
   return (
     <>
       <div className="username">
-        <h6>Hi, User!</h6>
+        <h6 className="title">Hi, User!</h6>
         <hr className="divider" />
       </div>
 

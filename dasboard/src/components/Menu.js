@@ -29,7 +29,7 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "26px" }} />
+      <img src="dashboardNavLogo.jpeg" style={{ width: "60px" }} />
       {/* <div className="menus"> */}
       <div className={`menus ${isMenuOpen ? "open" : ""}`}>
         <ul>
@@ -123,7 +123,7 @@ const Menu = () => {
               </p>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/apps"
               style={{ textDecoration: "none" }}
@@ -140,7 +140,7 @@ const Menu = () => {
                 Apps
               </p>
             </Link>
-          </li>
+          </li> */}
         </ul>
         <hr />
         <div className="profile" onClick={handleProfileClick}>

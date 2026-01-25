@@ -1,14 +1,27 @@
 import React from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const Navbar = () => {
+
+  const closeNavbar = () => {
+  const navbar = document.getElementById("navbarSupportedContent");
+  if (navbar) {
+    const bsCollapse = new window.bootstrap.Collapse(navbar, {
+      toggle: false,
+    });
+    bsCollapse.hide();
+  }
+};
+
+
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary pt-3 pb-3 sticky-top">
       <div className="container">
         <Link to="/" className="navbar-brand">
           <img
-            src="media/Images/logo.svg"
+            src="media/Images/Tradex-logo.jpg"
             className="img-fluid zerodhalogo"
             alt="Zerodha"
           />
@@ -29,19 +42,19 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link to="/signup" className="nav-link">Signup</Link>
+              <Link to="/signup" className="nav-link" onClick={closeNavbar}>Signup</Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link">About</Link>
+              <Link to="/about" className="nav-link" onClick={closeNavbar}>About</Link>
             </li>
             <li className="nav-item">
-              <Link to="/products" className="nav-link">Products</Link>
+              <Link to="/products" className="nav-link" onClick={closeNavbar}>Products</Link>
             </li>
             <li className="nav-item">
-              <Link to="/pricing" className="nav-link">Pricing</Link>
+              <Link to="/pricing" className="nav-link" onClick={closeNavbar}>Pricing</Link>
             </li>
             <li className="nav-item">
-              <Link to="/support" className="nav-link">Support</Link>
+              <Link to="/support" className="nav-link" onClick={closeNavbar}>Support</Link>
             </li>
           </ul>
         </div>

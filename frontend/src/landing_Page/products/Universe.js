@@ -4,16 +4,16 @@ import "./style.css"
 const Universe = () => {
   return (
     <div className='container mt-5 mb-5 text-center text-muted'>
-        <p className='mb-5' style={{margin:"110px 0 200px 0"}}><big>Want to know more about our technology stack? Check out the <span className='productLinks'><a href='#'>Zerodha.tech</a></span> blog. </big></p>
+        <p className='mb-5' style={{margin:"110px 0 200px 0"}}><big>Want to know more about our technology stack? Check out the <span className='productLinks'><a href='#'>TradeX.tech</a></span> blog. </big></p>
 
         <div className='mt-5 mb-5 text-muted'>
-          <h3>The Zerodha Universe</h3>
+          <h3>The TradeX Universe</h3>
           <p className='mt-4'>Extend your trading and investment experience even further with our partner platforms</p>
         </div>
 
         <div className='row universeContent'>
           <div className='col-lg-4 text-center' id='fundhouse'>
-            <img src='media/Images/zerodhaFundhouse.png' alt='zerodha Fund House Image' className='img-fluid' />
+            <img src='media/Images/zerodhaFundhouse.png' alt='TradeX Fund House Image' className='img-fluid' />
             <p className='mt-4 mb-5'>
               Our asset management venture
               that is creating simple and transparent index

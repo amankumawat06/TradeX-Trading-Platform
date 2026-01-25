@@ -1,0 +1,7 @@
+.account{
+    text-decoration: none;
+}
+
+.account:hover{
+    text-decoration: underline;
+}

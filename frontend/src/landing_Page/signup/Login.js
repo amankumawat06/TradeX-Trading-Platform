@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import "./style.css"
 
 const Login = () => {
   const navigate = useNavigate();
@@ -55,8 +56,10 @@ const Login = () => {
   };
 
   return (
-    <div className="container mt-5 mb-5 col-6 mt-2 mb-2 p-5">
-      <h1 className="text-center mb-4">Welcome Back</h1>
+    <div className="container my-5">
+      <div className="row justify-content-center">
+    <div className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 p-4 p-md-5 shadow rounded">
+      <h1 className="text-center mb-4">Login</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group mt-3">
           <label htmlFor="email">Email Address</label>
@@ -90,11 +93,13 @@ const Login = () => {
 
         <p className="mt-3 text-center">
           Don't have a account?&nbsp;
-          <Link to="/signup">Create account </Link>
+          <Link to="/signup" className="account">Create account </Link>
         </p>
       </form>
 
       <ToastContainer />
+    </div>
+    </div>
     </div>
   );
 };

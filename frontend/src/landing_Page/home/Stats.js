@@ -10,7 +10,7 @@ const Stats = () => {
 
             <div>
               <h4>Customer-first always</h4>
-              <p>That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh crores of equity investments, making us India’s largest broker; contributing to 15% of daily retail exchange volumes in India.</p>
+              <p>That's why 1.6+ crore customers trust TradeX with ~ ₹6 lakh crores of equity investments, making us India’s largest broker; contributing to 15% of daily retail exchange volumes in India.</p>
             </div>
             <div>
               <h4>No spam or gimmicks</h4>
@@ -18,7 +18,7 @@ const Stats = () => {
             </div>
 
             <div>
-              <h4>The Zerodha universe</h4>
+              <h4>The TradeX universe</h4>
               <p>Not just an app, but a whole ecosystem. Our investments in 30+ fintech startups offer you tailored services specific to your needs.</p>
             </div>
 
@@ -29,7 +29,7 @@ const Stats = () => {
             
           </div>
           <div className='col-lg-6 col-12'>
-            <img src='media/Images/ecosystem.png' className='img-fluid' />
+            <img src='media/Images/ecosystem2.png' className='img-fluid' />
             <div className='text-center statsLinks'>
               <a href='#' className="txtBold achorTagStyling">Explore our products →</a>
               <a href='#' className="txtBold achorTagStyling">Try Kite demo →</a>

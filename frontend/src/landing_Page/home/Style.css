@@ -21,6 +21,11 @@
 .signupBtn{
     margin: 0 auto;
     width: 20%;
+    background-color: #22C55E !important; 
+}
+
+.signupBtn:hover{
+    background-color: #16AC4A !important;
 }
 
 @media (max-width:992px) {

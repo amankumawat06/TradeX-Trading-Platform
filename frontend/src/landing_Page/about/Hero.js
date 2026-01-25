@@ -4,43 +4,52 @@ const Hero = () => {
   return (
     <div className="container text-center mt-5 mb-5">
       <div className="row">
-        <h2> We pioneered the discount broking model in India.</h2>
-        <h2> Now, we are breaking ground with our technology.</h2>
+        <h2>We are building a modern trading platform.</h2>
+        <h2>Focused on simplicity, performance, and learning.</h2>
       </div>
-      <hr className="mt-5 mb-5 pt-5 pb-5"/>
-      <div className="row mt-5" style={{color:"#424242"}}>
-        <div className="col-lg-6 col-12 text-start fs-5" style={{fontSize:"16px", fontWeight:"450"}}>
+
+      <hr className="mt-5 mb-5 pt-5 pb-5" />
+
+      <div className="row mt-5" style={{ color: "#424242" }}>
+        <div
+          className="col-lg-6 col-12 text-start fs-5"
+          style={{ fontSize: "16px", fontWeight: "450" }}
+        >
           <p>
-            We kick-started operations on the 15th of August, 2010 with the goal
-            of breaking all barriers that traders and investors face in India in
-            terms of cost, support, and technology. We named the company
-            Zerodha, a combination of Zero and "Rodha", the Sanskrit word for
-            barrier.
+            TradeX was built with the vision of creating a clean, accessible, and
+            modern trading platform that helps users understand markets while
+            managing their portfolios efficiently.
           </p>
           <p>
-            Today, our disruptive pricing models and in-house technology have
-            made us the biggest stock broker in India.
+            The goal behind TradeX is not just to enable trading, but to provide
+            clarity through intuitive design, meaningful analytics, and
+            performance-focused technology.
           </p>
           <p>
-            Over 1.6+ crore clients place billions of orders every year through
-            our powerful ecosystem of investment platforms, contributing over
-            15% of all Indian retail trading volumes.
+            By combining real-world trading concepts with modern full-stack
+            development practices, TradeX demonstrates how scalable and
+            user-centric financial applications can be built.
           </p>
         </div>
-        <div className="col-lg-6 col-12 text-start fs-5" style={{fontSize:"16px", fontWeight:"450"}}>
+
+        <div
+          className="col-lg-6 col-12 text-start fs-5"
+          style={{ fontSize: "16px", fontWeight: "450" }}
+        >
           <p>
-            In addition, we run a number of popular open online educational and
-            community initiatives to empower retail traders and investors.
+            TradeX is designed as a learning-first platform, allowing users to
+            explore trading workflows, portfolio tracking, and market analytics
+            in a simplified environment.
           </p>
           <p>
-            Rainmatter, our fintech fund and incubator, has invested in several
-            fintech startups with the goal of growing the Indian capital
-            markets.
+            The platform is built using modern technologies like React, Node.js,
+            Express, and MongoDB, focusing on performance, scalability, and clean
+            architecture.
           </p>
           <p>
-            And yet, we are always up to something new every day. Catch up on
-            the latest updates on our blog or see what the media is saying about
-            us or learn more about our business and product philosophies.
+            TradeX continues to evolve with new features and improvements as part
+            of an ongoing effort to build a robust and production-ready trading
+            experience.
           </p>
         </div>
       </div>
