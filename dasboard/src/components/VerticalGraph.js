@@ -29,9 +29,19 @@ export const options = {
       text: 'Holdings Price Chart',
     },
   },
+  options: {
+  scales: {
+    x: {
+      ticks: {
+          display :false
+        },
+      },
+    },
+}
+
 };
 
 
 export function VerticalGraph({data}) {
-  return <Bar options={options} data={data} />;
+  return <Bar options={options} data={data} className='holdingsChart'/>;
 }
