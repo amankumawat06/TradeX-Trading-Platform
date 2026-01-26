@@ -1076,3 +1076,9 @@ hr {
     align-items: center !important;
   }
 }
+
+@media (max-width:500px) {
+  .holdings-chart-wrapper{
+    height: 420px !important;
+  }
+}

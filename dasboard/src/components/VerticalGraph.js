@@ -6,8 +6,8 @@ import {
   Title,
   Tooltip,
   Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -15,33 +15,34 @@ ChartJS.register(
   BarElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 );
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
-      position: 'top',
+      position: "top",
     },
     title: {
       display: true,
-      text: 'Holdings Price Chart',
+      text: "Holdings Price Chart",
     },
   },
-  options: {
   scales: {
     x: {
       ticks: {
-          display :false
-        },
+        display: false,
       },
     },
-}
-
+  },
 };
 
-
-export function VerticalGraph({data}) {
-  return <Bar options={options} data={data} className='holdingsChart'/>;
+export function VerticalGraph({ data }) {
+  return (
+    <div className="holdings-chart-wrapper">
+      <Bar options={options} data={data} />;
+    </div>
+  );
 }
