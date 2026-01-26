@@ -12,6 +12,29 @@
     border-radius: var(--radius);
     border: 1px solid rgb(238, 238, 238);
   }
+
+  @media (max-width:1000px) {
+    .container{
+      left: 15%;
+      width: 60%;
+    }
+  }
+
+   @media (max-width:650px) {
+    .container{
+      left: 5%;
+      width: 80%;
+    }
+  }
+  @media (max-width:465px) {
+    .container{
+      left: 0%;
+      width: 94%;
+      /* margin: 0 17px; */
+      margin-left: 10px;
+      margin-right: 10px !important;
+    }
+  }
   
   .dragging {
     opacity: 0;

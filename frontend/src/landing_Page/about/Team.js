@@ -24,7 +24,7 @@ const Team = () => {
             color: "#424242",
           }}
         >
-          <h4 className="mb-4">About the Founder</h4>
+          <h4 className="mb-4">About</h4>
 
           <p>
             Aman Kumawat is a full-stack developer with a strong interest in

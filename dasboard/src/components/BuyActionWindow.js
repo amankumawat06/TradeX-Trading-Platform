@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import "./ActionWindows.css";
 import GeneralContext from "./GeneralContext.js";
 import axios from "axios";
+import { useNavigate } from "react-router-dom"
 
 const BuyActionWindow = ({ stock }) => {
+  const navigate = useNavigate()
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(stock.price);
 
@@ -16,6 +18,7 @@ const BuyActionWindow = ({ stock }) => {
       mode: "BUY",
     });
     closeBuyWindow();
+    navigate("/holdings")
   };
 
   const { closeBuyWindow } = useContext(GeneralContext)

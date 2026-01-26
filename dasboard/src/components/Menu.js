@@ -29,7 +29,9 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="dashboardNavLogo.jpeg" style={{ width: "60px" }} />
+      <Link to="/">
+        <img src="dashboardNavLogo.jpeg" style={{ width: "60px" }} />
+      </Link>
       {/* <div className="menus"> */}
       <div className={`menus ${isMenuOpen ? "open" : ""}`}>
         <ul>
@@ -142,9 +144,11 @@ const Menu = () => {
             </Link>
           </li> */}
         </ul>
-        <hr />
+        <hr className="navBorderRight"/>
         <div className="profile" onClick={handleProfileClick}>
-          <div className="avatar">ZU</div>
+          <Link to="/" style={{textDecoration:"none"}} onClick={() => closeMenu()}>
+            <div className="avatar">ZU</div>
+          </Link>
           <p className="username">USERID</p>
         </div>
       </div>
