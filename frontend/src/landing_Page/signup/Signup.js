@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 const Signup = () => {
   const navigate = useNavigate();
-
+  const [loading,setLoading] = useState(false)
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -31,6 +31,7 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true)
 
     try {
       const { data } = await axios.post(
@@ -47,7 +48,10 @@ const Signup = () => {
       }
     } catch (err) {
       toast.error("Something went wrong!");
+    }finally{
+      setLoading(false)
     }
+
     setFormData({
       username:"",
       email:"",
@@ -104,8 +108,8 @@ const Signup = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-secondary mt-4 w-100">
-          Sign up
+        <button type="submit" className="btn btn-secondary mt-4 w-100" disabled={loading}>
+          {loading ? "Signing up..." : "Sign up"}
         </button>
 
         <p className="mt-3 text-center">
