@@ -1077,6 +1077,10 @@ hr {
   }
 }
 
+.holdings-chart-wrapper {
+  height: 400px;   
+}
+
 @media (max-width:500px) {
   .holdings-chart-wrapper{
     height: 280px !important;
