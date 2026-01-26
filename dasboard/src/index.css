@@ -1079,6 +1079,6 @@ hr {
 
 @media (max-width:500px) {
   .holdings-chart-wrapper{
-    height: 420px !important;
+    height: 280px !important;
   }
 }
