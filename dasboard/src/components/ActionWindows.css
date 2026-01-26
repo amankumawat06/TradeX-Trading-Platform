@@ -242,3 +242,11 @@
     color: #fff;
   }
   
+  @media (max-width:400px) {
+     .buttons{
+      flex-direction: column;
+     }
+     .buttons>span{
+      margin-bottom: 20px;
+     }
+  }
