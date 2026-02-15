@@ -81,7 +81,7 @@ logging  into their account
 
 Make sure you have Installed these tools in your VS Code to run the project locally
 
-󠁯 •󠁏󠁏 Node.Js
+󠁯•󠁏󠁏 Node.Js
 
 •󠁏󠁏 Git
 
